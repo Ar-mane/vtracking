@@ -118,7 +118,7 @@ router.get("/accountNumber=12&bookingNumber=6", function (req, res, next) {
     checkIn: "2022-08-03T11:41:10",
     boardingArea: null,
     departure: "2022-08-03T11:41:10",
-    arrival: "2022-08-03T12:40:55",
+    arrival: null,
     customsControl: {
       status: "NotProvided",
       place: null,

@@ -22,7 +22,7 @@ router.get(
       departure: "2022-10-25T13:00:10",
       arrival: "2022-10-25T13:20:10",
       customsControl: {
-        status: "pending",
+        status: "ControlRequired",
         place: null,
       },
     });

@@ -106,4 +106,24 @@ router.get("/accountNumber=12&bookingNumber=4", function (req, res, next) {
   });
 });
 
+/* arrival non null + NoRequired (green status) */
+router.get("/accountNumber=12&bookingNumber=6", function (req, res, next) {
+  res.send({
+    accountNumber: 12,
+    direction: "FOCA",
+    registrationNumber: "ALICE1",
+    bookingNumber: 10286391,
+    bufferZone: null,
+    securityControl: null,
+    checkIn: "2022-08-03T11:41:10",
+    boardingArea: null,
+    departure: "2022-08-03T11:41:10",
+    arrival: "2022-08-03T12:40:55",
+    customsControl: {
+      status: "NotProvided",
+      place: null,
+    },
+  });
+});
+
 module.exports = router;

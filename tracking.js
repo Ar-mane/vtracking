@@ -20,9 +20,9 @@ router.get(
       checkIn: "2022-08-03T11:41:10",
       boardingArea: null,
       departure: "2022-10-25T13:00:10",
-      arrival: "2022-10-25T13:20:10",
+      arrival: null,
       customsControl: {
-        status: "ControlRequired",
+        status: "pending",
         place: null,
       },
     });
@@ -30,24 +30,27 @@ router.get(
 );
 
 /* departure null + arrival null + pending */
-router.get("/accountNumber=12&bookingNumber=0", function (req, res, next) {
-  res.send({
-    accountNumber: 12,
-    direction: "FOCA",
-    registrationNumber: "ALICE1",
-    bookingNumber: 10286391,
-    bufferZone: null,
-    securityControl: null,
-    checkIn: "2022-08-03T11:41:10",
-    boardingArea: null,
-    departure: null,
-    arrival: null,
-    customsControl: {
-      status: "pending",
-      place: null,
-    },
-  });
-});
+router.get(
+  "/accountNumber=12&bookingNumber=00000000",
+  function (req, res, next) {
+    res.send({
+      accountNumber: 12,
+      direction: "FOCA",
+      registrationNumber: "ALICE1",
+      bookingNumber: 10286391,
+      bufferZone: null,
+      securityControl: null,
+      checkIn: "2022-08-03T11:41:10",
+      boardingArea: null,
+      departure: null,
+      arrival: null,
+      customsControl: {
+        status: "pending",
+        place: null,
+      },
+    });
+  }
+);
 
 /* arrival non null + pending */
 router.get(

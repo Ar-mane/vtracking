@@ -17,9 +17,9 @@ router.get(
       bookingNumber: 10286391,
       bufferZone: null,
       securityControl: null,
-      checkIn: "2022-08-03T11:41:10",
+      checkIn: "2022-10-25T13:00:10",
       boardingArea: null,
-      departure: "2022-10-25T13:00:10",
+      departure: "2022-10-27T17:10:10",
       arrival: null,
       customsControl: {
         status: "pending",

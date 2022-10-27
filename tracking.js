@@ -20,7 +20,7 @@ router.get(
       checkIn: "2022-10-25T13:00:10",
       boardingArea: null,
       departure: "2022-10-27T17:10:10",
-      arrival: "2022-10-27T17:20:10",
+      arrival: null,
       customsControl: {
         status: "pending",
         place: null,
